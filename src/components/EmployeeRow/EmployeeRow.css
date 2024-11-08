@@ -1,0 +1,29 @@
+.team-member {
+    border: 2px solid rgb(239, 239, 239);
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.team-member:hover {
+    color: black;
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.member-icon {
+    margin-right: 12px;
+}
+
+.circle-container {
+    font-size: 1.5rem;
+}
+
+.team-member.active {
+    color: black;
+}
+
+.active .circle-container {
+    color: #32a852;
+}

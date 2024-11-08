@@ -1,0 +1,7 @@
+.search {
+    display: flex;
+    gap: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid rgb(239, 239, 239);
+    margin-bottom: 1em;
+}

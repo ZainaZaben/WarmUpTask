@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    color: rgb(155, 155, 155);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.5em 2em;
+}
+
+.btn:hover {
+    color: black;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.btn.active {
+    color: white;
+    background: linear-gradient(to right, rgb(60, 168, 204), rgb(93, 60, 139));
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+}
