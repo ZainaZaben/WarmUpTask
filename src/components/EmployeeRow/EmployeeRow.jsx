@@ -1,26 +1,21 @@
-import React, { Component } from "react";
-import "./EmployeeRow.css";
+import "./EmployeeRow.module.css";
 
-export default class EmployeeRow extends Component {
-  render() {
+export const EmployeeRow = ({ isActive, memberName, isCheckedCircle }) => {
     return (
-      <li className={`team-member ${this.props.isActive ? "active" : null}`}>
+      <li className={`team-member ${isActive ? "active" : ""}`}>
         <p>
           <span className="member-icon">
             <i className="fa fa-user" />
           </span>
-          <span>{this.props.memberName}</span>
+          <span>{memberName}</span>
         </p>
         <p className="circle-container">
           <i
             className={`${
-              this.props.isCheckedCircle
-                ? "far fa-check-circle"
-                : "far fa-circle"
+              isCheckedCircle ? "far fa-check-circle" : "far fa-circle"
             }`}
           />
         </p>
       </li>
     );
-  }
-}
+};

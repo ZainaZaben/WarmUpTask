@@ -1,13 +1,10 @@
-import React, { Component } from "react";
-import "./FormActionsControl.css";
+import "./FormActionsControl.module.css";
 
-export default class FormActionsControl extends Component {
-  render() {
+export const FormActionsControl = () =>{
     return (
       <footer className="footer">
         <button className="btn">Cancel</button>
         <button className="btn active">SAVE</button>
       </footer>
     );
-  }
-}
+};

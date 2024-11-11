@@ -1,8 +1,6 @@
-import React, { Component } from "react";
-import "./HeaderSection.css";
+import "./HeaderSection.module.css";
 
-export default class HeaderSection extends Component {
-  render() {
+export const HeaderSection = () => {
     return (
       <header className="headerSection">
         <p>
@@ -10,5 +8,4 @@ export default class HeaderSection extends Component {
         </p>
       </header>
     );
-  }
-}
+};

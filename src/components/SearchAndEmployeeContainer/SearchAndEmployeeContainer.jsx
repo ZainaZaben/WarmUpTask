@@ -1,15 +1,12 @@
-import React, { Component } from "react";
-import SearchField from "../SearchField/SearchField";
-import EmployeeList from "../EmployeeList/EmployeeList";
-import "./SearchAndEmployeeContainer.css";
+import {SearchField} from "../SearchField/SearchField";
+import {EmployeeList} from "../EmployeeList/EmployeeList";
+import "./SearchAndEmployeeContainer";
 
-export default class MainSection extends Component {
-  render() {
+export const SearchAndEmployeeContainer = () => {
     return (
       <section className="search-and-employee-container">
-        <SearchField></SearchField>
-        <EmployeeList></EmployeeList>
+        <SearchField/>
+        <EmployeeList/>
       </section>
     );
-  }
-}
+};

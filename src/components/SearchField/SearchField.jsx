@@ -1,8 +1,6 @@
-import React, { Component } from "react";
-import "./SearchField.css";
+import styles from "./SearchField.module.css";
 
-export default class SearchField extends Component {
-  render() {
+export const SearchField = () =>{
     return (
       <div className="search">
         <p>
@@ -11,5 +9,4 @@ export default class SearchField extends Component {
         <p>Find members</p>
       </div>
     );
-  }
-}
+};

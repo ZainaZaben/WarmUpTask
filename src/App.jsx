@@ -1,9 +1,8 @@
-import React, { Component } from "react";
-import HeaderSection from "./components/HeaderSection/HeaderSection";
-import FormActionsControl from "./components/FormActionsControl/FormActionsControl";
-import SearchAndEmployeeContainer from "./components/SearchAndEmployeeContainer/SearchAndEmployeeContainer";
+import {HeaderSection} from "./components/HeaderSection/HeaderSection";
+import {FormActionsControl} from "./components/FormActionsControl/FormActionsControl";
+import {SearchAndEmployeeContainer} from "./components/SearchAndEmployeeContainer/SearchAndEmployeeContainer";
 
-function App() {
+export const App= ()=> {
   return (
     <div className="main-container">
         <HeaderSection/>
@@ -11,6 +10,5 @@ function App() {
         <FormActionsControl />
     </div>
   );
-}
+};
 
-export default App;
