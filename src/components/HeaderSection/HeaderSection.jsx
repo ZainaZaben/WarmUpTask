@@ -1,8 +1,8 @@
-import "./HeaderSection.module.css";
+import classes from "./HeaderSection.module.css";
 
 export const HeaderSection = () => {
     return (
-      <header className="headerSection">
+      <header className={classes.headerSection}>
         <p>
           <strong>Add members to Front-end development team</strong>
         </p>

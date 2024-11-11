@@ -1,5 +1,5 @@
 import { EmployeeRow } from "../EmployeeRow/EmployeeRow";
-import "./EmployeeList.module.css";
+import classes from "./EmployeeList.module.css";
 
 const TEAM_MEMBERS_NAMES = [
   {
@@ -40,7 +40,7 @@ const TEAM_MEMBERS_NAMES = [
 ];
 export const EmployeeList = () => {
   return (
-    <div className="teams">
+    <div className={classes.teams}>
       <ul>
         {TEAM_MEMBERS_NAMES.map((employee, index) => (
           <EmployeeRow

@@ -8,7 +8,7 @@ body {
     font-size: 1.2rem;
 }
 
-.main-container {
+.mainContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

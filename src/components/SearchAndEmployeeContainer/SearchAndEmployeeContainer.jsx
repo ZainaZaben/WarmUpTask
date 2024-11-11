@@ -1,10 +1,10 @@
 import {SearchField} from "../SearchField/SearchField";
 import {EmployeeList} from "../EmployeeList/EmployeeList";
-import "./SearchAndEmployeeContainer";
+import classes from "./SearchAndEmployeeContainer.module.css";
 
 export const SearchAndEmployeeContainer = () => {
     return (
-      <section className="search-and-employee-container">
+      <section className={classes.searchAndEmployeeContainerClass}>
         <SearchField/>
         <EmployeeList/>
       </section>
